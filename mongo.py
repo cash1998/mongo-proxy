@@ -38,4 +38,4 @@ class MongoDB:
     async def delete_document(self, collection_name: str, document_id: str):
         collection = self.db[collection_name]
         await collection.delete_one({"_id": ObjectId(document_id)})
-        print("We rollin''-------")
+        print("We rollin''------------")
